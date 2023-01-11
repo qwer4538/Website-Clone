@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  background-color: #000000;
+  color: #fff;
+}
+ul {
+  list-style-type: none;
+  
+}
+a:link a:visited, a:hover, a:active {
+  text-decoration:none;
+  color:#fff;
+}
+.clear {
+  clear:both;
+}
+
+
+header #top{
+  width:990px;
+}
+header #Logo {
+  float:left;
+}
+header #top_menu {
+  float:left;
+  margin-top: 20px;
+}
+header #top_menu li {
+  display:inline;
+  margin-left:15px;
+}
+header #top_menu a{
+  color:#fff;
+}
+header #top_menu a:link {
+  font-size:14px;
+  width:3px; 
+  text-decoration:none;
+  color:#fff;
+}
+header #top_menu li.green a:link {
+  width:none; 
+  font-weight: bold;
+}
+.menu-right{
+  margin-top: 15px;
+  float: right;
+  cursor: pointer;
+  color: white;
+}
+
+.main {
+  clear: both;
+  color: white;
+ height: 850px;
+ padding-top: 50px;
+}
+.main h1 {
+  font-size: 38px;
+}
+
+  h3 {
+    font-size: 28px;
+  }
+
+h6 {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+
+.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+}
+.fullscreen .container {
+  padding: 15px;
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fullscreen .container .card {
+  overflow: hidden;
+  width: 30%;
+  height: 70%;
+  background: #fff;
+  box-shadow: 1px 22px 44px rgba(0, 0, 0, 0.19);
+  transition: 0.6s;
+  border-radius: 2px;
+  position: relative;
+  display: flex;
+}
+.fullscreen .container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 1px 12px 34px rgba(0, 0, 0, 0.31);
+}
+.fullscreen .container .card:hover .sinopse {
+  opacity: 1;
+  transition-delay: 0.4s;
+}
+.fullscreen .container .card:hover .sinopse .view {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 0.6s;
+  transition-delay: 1s;
+}
+.fullscreen .container .card:hover .sinopse .content-sinopse .text {
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+.fullscreen .container .card:hover .sinopse .content-sinopse .title {
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.fullscreen .container .card:hover .date {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.fullscreen .container .card:hover .content {
+  transform: translateY(100%);
+  opacity: 0;
+}
+.fullscreen .container .card .date {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  transition: 0.8s;
+}
+.fullscreen .container .card .date .tv_ico img {
+  width: 12px;
+  vertical-align: baseline;
+  margin-left: 6px;
+}
+.fullscreen .container .card .content {
+  transition: 0.8s;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  padding: 25px 25px 50px 25px;
+}
+.fullscreen .container .card .content .title {
+  width: 100%;
+  color: #fff;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 12px;
+}
+.fullscreen .container .card .content .text {
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+.fullscreen .container .card .sinopse {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px 25px 50px 25px;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fff;
+  font-weight: 300;
+  opacity: 0;
+  transition: 0.8s;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.fullscreen .container .card .sinopse iframe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-left: -30px;
+  height: 260px;
+}
+.fullscreen .container .card .sinopse .view {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+  color: #fff;
+  font-size: 14px;
+  border-bottom: 1px solid #fff;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.6s;
+  cursor: pointer;
+}
+.fullscreen .container .card .sinopse .content-sinopse .title {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  transform: translateY(-100%);
+  transition: 0.6s;
+}
+.fullscreen .container .card .sinopse .content-sinopse .text {
+  transform: translateY(100%);
+  transition: 0.6s;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  font-size: 14px;
+}
+.fullscreen .container .card_1 {
+  background: url("img/hell.jpg") no-repeat center/cover;
+}
+.fullscreen .container .card_2 {
+  background: url("img/squid.JPG") no-repeat 45%/cover;
+}
+.fullscreen .container .card_3 {
+  background: url("img/dp.JPG") no-repeat 45%/cover;
+}
+.fullscreen .container .card_4 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.88)), url("img/myname.JPG") no-repeat center/cover;
+}
+
+.fullserie {
+  background-color: #333;
+  -webkit-clip-path: circle(0% at 0 100%);
+  clip-path: circle(0% at 0 100%);
+  min-height: 550px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.6s;
+}
+.fullserie.active {
+  background-color: #333;
+  transition: 0.6s;
+  transition-delay: 0.45s;
+  -webkit-clip-path: circle(270% at 220px 88%);
+  clip-path: circle(270% at 220px 88%);
+}
+.fullserie .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.fullserie .close img {
+  width: 22px;
+}
+.fullserie .episodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-rows: repeat(4, minmax(230px, auto));
+  grid-gap: 30px;
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(260px, auto);
+  width: 100%;
+  height: 100%;
+  padding: 60px 60px 120px 60px;
+}
+.fullserie .episodes .episode {
+  background: red;
+}
+.link {
+  padding: 50px;
+}
+
+.logos a{
+  padding: 10px;
+}
+
+.logo {
+  color: #999;
+}
+
+.footer {
+	max-width: 70%;
+	margin: 1rem auto;
+	overflow: auto;
+}
+.footer,
+.footer a {
+	color: #999;
+	font-size: 0.9rem;
+    text-decoration:none;
+}
+
+.footer p {
+	margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.footer li {
+	line-height: 1.9;
+}
+
+.footer .lang-select {
+	margin-top: 2rem;
+	color: #999;
+	background-color: #000;
+	background-image: none;
+	border: 1px solid #333;
+	padding: 1rem 1.2rem;
+	border-radius: 5px;
+}
+
+
+
+
+  

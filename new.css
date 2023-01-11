@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a:link a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  header #top {
+    width: 990px;
+  }
+  
+  header #Logo {
+    float: left;
+  }
+  
+  header #top_menu {
+    float: left;
+    margin-top: 20px;
+  }
+  
+  header #top_menu li {
+    display: inline;
+    margin-left: 15px;
+  }
+  
+  header #top_menu a {
+    color: #fff;
+  }
+  
+  header #top_menu a:link {
+    font-size: 14px;
+    width: 3px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  header #top_menu li.green a:link {
+    width: none;
+    font-weight: bold;
+  }
+  
+  .menu-right {
+    margin-top: 15px;
+    float: right;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .main {
+    clear: both;
+    color: white;
+    height: 850px;
+    padding-top: 50px;
+  }
+  
+  .main h1 {
+    font-size: 38px;
+  }
+  
+  h3 {
+    font-size: 28px;
+  }
+  
+  h6 {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  
+  .items {
+      margin-top: 3cm;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 5000px;
+    transform: translateY(-30%) translateX(-30%);
+  }
+  .items li {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    list-style: none;
+    width: 200px;
+    height: 120px;
+    background-color: black;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .items li .bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center top;
+  }
+  .items li:hover {
+    transition-delay: 0.5s;
+    width: 400px;
+    height: 250px;
+  }
+  .items li:hover a .content {
+    transform: translateY(0) translateX(-50%);
+    transition-delay: 0.75s;
+    opacity: 2;
+  }
+  .items li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+  .items li a .content {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(100%) translateX(-50%);
+    transition-duration: 1s;
+    opacity: 0;
+    padding: 40px 10px 10px 10px;
+    width: 400px;
+  }
+  .items li a .content h2 {
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+  }
+  .items1 {
+    margin-top: 3cm;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 5000px;
+  transform: translateY(-30%) translateX(-30%);
+}
+.items1 li {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  list-style: none;
+  width: 200px;
+  height: 120px;
+  background-color: black;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+}
+.items1 li .bg-img1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center top;
+}
+.items1 li:hover {
+  transition-delay: 0.5s;
+  width: 400px;
+  height: 250px;
+}
+.items1 li:hover a .content1 {
+  transform: translateY(0) translateX(-50%);
+  transition-delay: 0.75s;
+  opacity: 2;
+}
+.items1 li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.items1 li a .content1 {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateY(100%) translateX(-50%);
+  transition-duration: 1s;
+  opacity: 0;
+  padding: 40px 10px 10px 10px;
+  width: 400px;
+}
+.items1 li a .content1 h2 {
+  font-weight: 300;
+  color: white;
+  font-size: 20px;
+}
+  .link {
+    padding: 50px;
+  }
+  
+  .logos a{
+    padding: 10px;
+  }
+  
+  .logo {
+    color: #999;
+  }
+  
+  .footer {
+      max-width: 70%;
+      margin: 1rem auto;
+      overflow: auto;
+  }
+  .footer,
+  .footer a {
+      color: #999;
+      font-size: 0.9rem;
+      text-decoration:none;
+  }
+  
+  .footer p {
+      margin-bottom: 1.5rem;
+  }
+  
+  .footer .footer-cols {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+  }
+  
+  .footer li {
+      line-height: 1.9;
+  }
+  
+  .footer .lang-select {
+      margin-top: 2rem;
+      color: #999;
+      background-color: #000;
+      background-image: none;
+      border: 1px solid #333;
+      padding: 1rem 1.2rem;
+      border-radius: 5px;
+  }
+  
+  
+  
